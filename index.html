@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover elegant rings, bracelets and timeless jewellery at NAYAB."
+    >
+
+    <meta name="theme-color" content="#090909">
+
+    <title>NAYAB | Timeless Luxury Jewellery</title>
+
+    <!-- Premium fonts: elegant headings and clean body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS: We will write this file in the next step -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript: We will write this file after the CSS -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         ANNOUNCEMENT BAR
+         ========================= -->
+    <div class="announcement-bar">
+        <p>TIMELESS BEAUTY. EFFORTLESS LUXURY.</p>
+    </div>
+
+
+    <!-- =========================
+         HEADER / NAVIGATION
+         ========================= -->
+    <header class="site-header" id="top">
+
+        <div class="header-inner">
+
+            <a href="#top" class="brand-logo" aria-label="NAYAB Home">
+                NAYAB<span class="logo-dot">.</span>
+                <span class="brand-subtitle">FINE JEWELLERY</span>
+            </a>
+
+            <!-- Mobile menu button.
+                 JavaScript will open and close this menu later. -->
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="primary-navigation"
+                id="primary-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="#home">Home</a>
+                <a href="#collection">Collection</a>
+                <a href="#about">Our Story</a>
+                <a href="#craftsmanship">Craftsmanship</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#collection" class="header-shop-link">
+                EXPLORE <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO / MAIN BANNER
+             ========================= -->
+        <section class="hero-section" id="home">
+
+            <!--
+                HERO IMAGE PLACEHOLDER:
+                Replace this image with your best wide luxury jewellery
+                photograph, preferably a gold ring or bracelet on a
+                black or dark background.
+
+                Recommended image shape: landscape / 16:9.
+                Choose a high-resolution image with space for text.
+            -->
+
+            <div class="hero-image-wrapper">
+
+                <img
+                    class="hero-image"
+                    src="ring 2.jpeg"
+                    alt="Elegant gold jewellery displayed in a luxurious setting"
+                    fetchpriority="high"
+                >
+
+                <div class="hero-overlay"></div>
+
+            </div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    THE ART OF ELEGANCE
+                </p>
+
+                <h1>
+                    Elegance That<br>
+                    <span>Lasts Forever.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover timeless jewellery designed to celebrate
+                    your individuality, beauty and most precious moments.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#collection" class="button button-gold">
+                        EXPLORE COLLECTION
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="#about" class="text-link">
+                        OUR STORY
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom-note">
+                <span>01 / TIMELESS COLLECTION</span>
+                <a href="#collection" aria-label="Scroll to collection">
+                    SCROLL TO DISCOVER ↓
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BRAND VALUES / FEATURES
+             ========================= -->
+        <section class="brand-values" aria-label="Our jewellery values">
+
+            <div class="value-item">
+                <span class="value-symbol" aria-hidden="true">✧</span>
+                <h2>TIMELESS DESIGN</h2>
+                <p>Pieces made to complement every occasion.</p>
+            </div>
+
+            <div class="value-item">
+                <span class="value-symbol" aria-hidden="true">◇</span>
+                <h2>THOUGHTFUL DETAIL</h2>
+                <p>Beauty found in every little detail.</p>
+            </div>
+
+            <div class="value-item">
+                <span class="value-symbol" aria-hidden="true">♡</span>
+                <h2>MADE TO BE YOURS</h2>
+                <p>Jewellery that reflects your own style.</p>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURED COLLECTION
+             ========================= -->
+        <section class="collection-section section-padding" id="collection">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">DISCOVER YOUR SIGNATURE</p>
+
+                    <h2>
+                        The Signature<br>
+                        <span>Collection</span>
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    From delicate everyday essentials to statement
+                    pieces, discover jewellery that feels uniquely yours.
+                </p>
+
+            </div>
+
+
+            <!-- Product category navigation -->
+            <div class="collection-toolbar">
+
+                <p>OUR SELECTED PIECES</p>
+
+                <div class="category-filters" aria-label="Filter products">
+
+                    <button
+                        class="filter-button active"
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true"
+                    >
+                        ALL PIECES
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-filter="rings"
+                        aria-pressed="false"
+                    >
+                        RINGS
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        type="button"
+                        data-filter="bracelets"
+                        aria-pressed="false"
+                    >
+                        BRACELETS
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!--
+                PRODUCT IMAGE NOTES:
+
+                1. Replace each placeholder with a clear jewellery
+                   product photograph on a neutral background.
+                2. Use similar image dimensions for all products.
+                3. Save your image files inside the "images" folder.
+                4. Product names and prices below are SAMPLE content.
+                   Replace them with the actual brand's details.
+            -->
+
+            <div class="product-grid" id="product-grid">
+
+
+                <!-- PRODUCT 01: RING -->
+
+                <article class="product-card" data-category="rings">
+
+                    <a
+                        class="product-image-link"
+                        href="#contact"
+                        aria-label="Ask about The Aurelia Ring"
+                    >
+
+                        <!-- IMAGE: A close-up luxury gold ring -->
+                        <img
+                            class="product-image"
+                            src="ring 3.jpeg"
+                            alt="Aurelia gold ring displayed on a neutral background"
+                            loading="lazy"
+                        >
+
+                        <span class="product-badge">SIGNATURE</span>
+
+                    </a>
+
+                    <div class="product-details">
+
+                        <div class="product-title-row">
+
+                            <div>
+                                <p class="product-category">RINGS</p>
+                                <h3>The Aurelia Ring</h3>
+                            </div>
+
+                            <p class="product-price">Rs. 2,500</p>
+
+                        </div>
+
+                        <p class="product-description">
+                            A refined design with a timeless golden finish.
+                        </p>
+
+                        <button
+                            class="button button-outline add-to-cart"
+                            type="button"
+                            data-product-id="aurelia-ring"
+                        >
+                            ADD TO CART <span aria-hidden="true">+</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 02: RING -->
+
+                <article class="product-card" data-category="rings">
+
+                    <a
+                        class="product-image-link"
+                        href="#contact"
+                        aria-label="Ask about The Solene Ring"
+                    >
+
+                        <!-- IMAGE: An elegant minimal gold ring -->
+                        <img
+                            class="product-image"
+                            src="ring 4.jpeg"
+                            alt="Solene minimal gold ring"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <div class="product-details">
+
+                        <div class="product-title-row">
+
+                            <div>
+                                <p class="product-category">RINGS</p>
+                                <h3>The Solene Ring</h3>
+                            </div>
+
+                            <p class="product-price">Rs. 1,800</p>
+
+                        </div>
+
+                        <p class="product-description">
+                            Understated elegance for your everyday style.
+                        </p>
+
+                        <button
+                            class="button button-outline add-to-cart"
+                            type="button"
+                            data-product-id="solene-ring"
+                        >
+                            ADD TO CART <span aria-hidden="true">+</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 03: BRACELET -->
+
+                <article class="product-card" data-category="bracelets">
+
+                    <a
+                        class="product-image-link"
+                        href="#contact"
+                        aria-label="Ask about The Celeste Bracelet"
+                    >
+
+                        <!-- IMAGE: A delicate gold chain bracelet -->
+                        <img
+                            class="product-image"
+                            src="ring 5.jpeg"
+                            alt="Celeste delicate gold bracelet"
+                            loading="lazy"
+                        >
+
+                        <span class="product-badge">BESTSELLER</span>
+
+                    </a>
+
+                    <div class="product-details">
+
+                        <div class="product-title-row">
+
+                            <div>
+                                <p class="product-category">BRACELETS</p>
+                                <h3>The Celeste Bracelet</h3>
+                            </div>
+
+                            <p class="product-price">Rs. 2,200</p>
+
+                        </div>
+
+                        <p class="product-description">
+                            A delicate bracelet with a graceful finish.
+                        </p>
+
+                        <button
+                            class="button button-outline add-to-cart"
+                            type="button"
+                            data-product-id="celeste-bracelet"
+                        >
+                            ADD TO CART <span aria-hidden="true">+</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 04: BRACELET -->
+
+                <article class="product-card" data-category="bracelets">
+
+                    <a
+                        class="product-image-link"
+                        href="#contact"
+                        aria-label="Ask about The Elara Bracelet"
+                    >
+
+                        <!-- IMAGE: A premium gold cuff bracelet -->
+                        <img
+                            class="product-image"
+                            src="ring6.jpeg"
+                            alt="Elara elegant gold bracelet"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <div class="product-details">
+
+                        <div class="product-title-row">
+
+                            <div>
+                                <p class="product-category">BRACELETS</p>
+                                <h3>The Elara Bracelet</h3>
+                            </div>
+
+                            <p class="product-price">Rs. 2,800</p>
+
+                        </div>
+
+                        <p class="product-description">
+                            A statement piece for your special occasions.
+                        </p>
+
+                        <button
+                            class="button button-outline add-to-cart"
+                            type="button"
+                            data-product-id="elara-bracelet"
+                        >
+                            ADD TO CART <span aria-hidden="true">+</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <div class="collection-footer">
+
+                <p>FIND THE PIECE THAT FEELS LIKE YOU.</p>
+
+                <a href="#contact" class="text-link">
+                    ENQUIRE ABOUT OUR COLLECTION ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EDITORIAL / FEATURE IMAGE
+             ========================= -->
+        <section class="editorial-section" id="craftsmanship">
+
+            <div class="editorial-image-wrapper">
+
+                <!--
+                    IMAGE: Use a wide editorial jewellery photograph.
+                    Ideas: jewellery on black silk, a gold bracelet
+                    on a cream surface, or a close-up of fine details.
+                -->
+
+                <img
+                    src="ring 7.jpeg"
+                    alt="Close-up of fine jewellery and golden details"
+                    class="editorial-image"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="editorial-content">
+
+                <p class="eyebrow">BEAUTY IN EVERY DETAIL</p>
+
+                <h2>
+                    The Beauty of<br>
+                    <span>Being Timeless.</span>
+                </h2>
+
+                <p>
+                    True elegance is never about following every trend.
+                    It is about choosing pieces that make you feel
+                    confident, expressive and completely yourself.
+                </p>
+
+                <a href="#collection" class="button button-gold">
+                    DISCOVER THE COLLECTION ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT THE BRAND
+             ========================= -->
+        <section class="about-section section-padding" id="about">
+
+            <div class="about-image-wrapper">
+
+                <!--
+                    IMAGE: Choose a refined jewellery flat-lay or
+                    a jewellery-making / craftsmanship photograph.
+                -->
+
+                <img
+                    src="ring 8.jpeg"
+                    alt="Elegant jewellery arranged in a warm, refined setting"
+                    class="about-image"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">THE WORLD OF NAYAB</p>
+
+                <h2>
+                    More Than Jewellery.<br>
+                    <span>A Personal Statement.</span>
+                </h2>
+
+                <p>
+                    NAYAB celebrates the beauty of individuality through
+                    elegant jewellery and thoughtful design. Every piece
+                    is selected to complement your style and become part
+                    of the moments you treasure.
+                </p>
+
+                <p>
+                    Our vision is simple: create a jewellery experience
+                    that feels personal, beautiful and timeless.
+                </p>
+
+                <a href="#contact" class="text-link">
+                    GET TO KNOW US ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROMOTIONAL BANNER
+             ========================= -->
+        <section class="quote-banner">
+
+            <p class="eyebrow">A TOUCH OF GOLD</p>
+
+            <h2>
+                Your Style.<br>
+                <span>Your Story.</span>
+            </h2>
+
+            <p>
+                Discover the little details that make a lasting impression.
+            </p>
+
+            <a href="#collection" class="button button-gold">
+                SHOP THE COLLECTION ↗
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             SHOPPING CART
+             ========================= -->
+        <section class="cart-section section-padding" id="cart">
+
+            <div class="section-heading cart-heading">
+
+                <div>
+                    <p class="eyebrow">YOUR SELECTED PIECES</p>
+                    <h2>Your Shopping <span>Bag.</span></h2>
+                </div>
+
+                <p class="section-description">
+                    Review your selection before placing an order enquiry.
+                </p>
+
+            </div>
+
+            <div class="cart-content">
+
+                <!-- JavaScript will display selected products here. -->
+                <div class="cart-items" id="cart-items" aria-live="polite">
+
+                    <p class="empty-cart-message">
+                        Your bag is waiting for something beautiful.
+                    </p>
+
+                </div>
+
+                <div class="cart-summary">
+
+                    <div class="cart-total-row">
+                        <span>Subtotal</span>
+                        <strong id="cart-total">Rs. 0</strong>
+                    </div>
+
+                    <p class="cart-note">
+                        Delivery charges, if any, will be confirmed
+                        before the order is finalized.
+                    </p>
+
+                    <button
+                        class="button button-gold checkout-button"
+                        id="checkout-button"
+                        type="button"
+                        disabled
+                    >
+                        CONTINUE TO ORDER ↗
+                    </button>
+
+                    <a href="#collection" class="text-link">
+                        CONTINUE SHOPPING
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT / ORDER ENQUIRY
+             ========================= -->
+        <section class="contact-section section-padding" id="contact">
+
+            <div class="contact-content">
+
+                <p class="eyebrow">LET'S MAKE IT YOURS</p>
+
+                <h2>
+                    Found Something<br>
+                    <span>You Love?</span>
+                </h2>
+
+                <p>
+                    Have a question about a piece or want to enquire
+                    about an order? Get in touch with us.
+                </p>
+
+                <!--
+                    CONTACT SETUP:
+                    Replace the WhatsApp placeholder with the brand's
+                    actual WhatsApp number before publishing.
+
+                    Use the international number format without "+"
+                    or spaces in the URL.
+                -->
+
+                <a
+                    href="https://wa.me/REPLACE_WITH_WHATSAPP_NUMBER"
+                    class="button button-gold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="contact-whatsapp"
+                >
+                    CONTACT US ON WHATSAPP ↗
+                </a>
+
+                <p class="contact-small-note">
+                    We're happy to help you find your perfect piece.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NEWSLETTER / EMAIL ENQUIRY
+             ========================= -->
+        <section class="newsletter-section">
+
+            <div class="newsletter-content">
+
+                <p class="eyebrow">A LITTLE NOTE OF LUXURY</p>
+
+                <h2>Stay in the <span>Know.</span></h2>
+
+                <p>
+                    Get in touch to learn more about new collections
+                    and featured jewellery pieces.
+                </p>
+
+                <!--
+                    This form is a visual front-end placeholder.
+                    JavaScript alone will not subscribe people to an
+                    email list. A real service or backend is required.
+                -->
+
+                <form class="newsletter-form" id="newsletter-form">
+
+                    <label class="visually-hidden" for="newsletter-email">
+                        Your email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <button type="submit" class="newsletter-submit">
+                        SUBMIT ↗
+                    </button>
+
+                </form>
+
+                <p
+                    class="newsletter-message"
+                    id="newsletter-message"
+                    aria-live="polite"
+                ></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#top" class="brand-logo" aria-label="NAYAB Home">
+                    NAYAB<span class="logo-dot">.</span>
+                    <span class="brand-subtitle">FINE JEWELLERY</span>
+                </a>
+
+                <p>
+                    Timeless jewellery. Thoughtful details.
+                    A style that is uniquely yours.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h2>EXPLORE</h2>
+
+                <a href="#home">Home</a>
+                <a href="#collection">Collection</a>
+                <a href="#about">Our Story</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h2>NEED HELP?</h2>
+
+                <a href="#contact">Contact Us</a>
+                <a href="#cart">Shopping Bag</a>
+                <a href="#craftsmanship">Our Craft</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year">2026</span> NAYAB.
+                All rights reserved.
+            </p>
+
+            <a href="#top">BACK TO TOP ↑</a>
+
+        </div>
+
+        <!-- Developer credit for your portfolio sample -->
+        <p class="developer-credit">
+            Website concept & development by Nayab.
+        </p>
+
+    </footer>
+
+</body>
+</html>
